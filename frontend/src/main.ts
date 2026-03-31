@@ -239,6 +239,12 @@ addCommand("ajuda", {
     }
 });
 
+addCommand("limpar", {
+    f: async () => {
+        termClear();
+    }
+});
+
 try {
     const info = await fetchClient.info();    
     await principal(info);
